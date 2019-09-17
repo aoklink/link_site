@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>领客菲力-你动我懂，健身房智能升级方案提供商</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="keywords" content="健身房智能saas系统,智慧健身房,健身房升级,健身房物联网升级方案,健身房心率系统,健身房数据方案">  
+<meta name="description" content="领客菲力-你动我懂，健身房智能升级方案提供商">
+<link rel="shortcut icon" href="./img/favicon.ico">
+<link rel="icon" href="./img/favicon.ico"> 
+<script>
+window.onload = function(){
+  (function() {
+    var sUserAgent = navigator.userAgent;
+    if(sUserAgent.indexOf('Android') > -1 || sUserAgent.indexOf('iPhone') > -1 || sUserAgent.indexOf('iPad') > -1 || sUserAgent.indexOf('iPod') > -1 || sUserAgent.indexOf('Symbian') > -1) {
+        location.href = 'http://m.linkfeeling.cn/index.html';
+    }
+   })();
+};
+</script>
+<script src="./js/jquery.js"></script>
+<link rel="stylesheet" href="css/bannerSlide.css">
+<script src="./js/react.production.min.js"></script>
+<script src="./js/react-dom.production.min.js"></script>
+<script src="./js/babel.min.js"></script>
+<script src="./js/moment.min.js"></script>
+<link rel="stylesheet" href="./css/antd.css" />
+<script src="./js/antd.js"></script>
+<script  type="text/babel" src="./js/add.js"></script>
+<link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+<div class="ok" id="ok">
+	<div class="ocen">
+		<div>信息提交成功</div>
+		<div>我们将在1个工作日内与您联系，</div>
+		<div>请保持手机通话通畅</div>
+		<div onclick="clo()">我知道了</div>
+	</div>
+</div>
+<header>
+	<main>
+		<h1>
+			<img src="./img/logo.png">
+		</h1>
+		<ul>
+			<li>
+				<a onclick="abc(0)" class="abc" href="javascript:;">首页</a>
+				<svg width="24px" height="5px" class="svg">
+          <line x1="2" y1="3" x2="22" y2="3" style="stroke:#F5B717;stroke-width:3"/>
+				</svg>
+			</li>
+			<li>
+				<a onclick="abc(1)" class="abc" href="#cp">产品</a>
+				<svg width="24px" height="5px" class="svg">
+          <line x1="2" y1="3" x2="22" y2="3" style="stroke:#F5B717;stroke-width:3"/>
+				</svg>
+			</li>
+			<li>
+				<a onclick="abc(2)" class="abc" href="#hw">服务</a>
+				<svg width="24px" height="5px" class="svg">
+          <line x1="2" y1="3" x2="22" y2="3" style="stroke:#F5B717;stroke-width:3"/>
+				</svg>
+			</li>
+			<li>
+				<a onclick="abc(3)" class="abc" href="#hw">联系我们</a>
+				<svg width="52px" height="5px" class="svg">
+          <line x1="2" y1="3" x2="50" y2="3" style="stroke:#F5B717;stroke-width:3"/>
+				</svg>
+			</li>
+		</ul>
+	</main>
+</header>
+<nav>
+	<main>
+		<div>你动我懂</div>
+		<div>让数据提升你的经营能力</div>
+		<div></div>
+		<div></div>
+	</main>
+</nav>
+<div class="pbox">
+	<main>
+		<div class="addr">
+			<input id="inta" class="inta" type="" name="" value="" placeholder="场馆名称">
+			<div class="intb" id="root"></div>
+			<input id="intc" class="intc" type="" name="" value="" placeholder="联系人">
+			<input id="intd" class="intd" type="" name="" value="" placeholder="联系方式">
+			<div class="inte" onclick="post()">立即试用（免费）</div>
+		</div>
+		<div class="produt">
+			<div class="prod">
+				<svg width="5px" height="25px" class="svg">
+	        <line x1="3" y1="2" x2="3" y2="23" style="stroke:#FFC42B;stroke-width:3"/>
+				</svg>
+				<div>专业团队</div>
+				<div>汇集国内外芯片、边缘计算、室内定位等领域的技术团队，以及包括10余年经验的健身和互联网从业人员。</div>
+			</div>
+			<div class="prod">
+				<svg width="5px" height="25px" class="svg">
+	        <line x1="3" y1="2" x2="3" y2="23" style="stroke:#FFC42B;stroke-width:3"/>
+				</svg>
+				<div>完整数据</div>
+				<div>自主研发的数据收集系统，能采集健身房常见的有氧、无氧、hiit数据，包括心率、重量、次数、速度、距离、配速、热量消耗等。</div>
+			</div>
+			<div class="prod">
+				<svg width="5px" height="25px" class="svg">
+	        <line x1="3" y1="2" x2="3" y2="23" style="stroke:#FFC42B;stroke-width:3"/>
+				</svg>
+				<div>贴身服务</div>
+				<div>提供完善的系统试用和售后服务，7*12专属服务经理全程1对1为您答疑解忧。</div>
+			</div>
+		</div>
+		<a class="ptit" name="cp">数据提升能力 智慧创造收益</a>
+		<div class="proa">
+			<div class="proaa">
+				<div></div>
+				<div>运动数据在线化</div>
+				<div>自动记录会员在健身房内的各种运动数据，</div>
+				<div>方便其分享查看和教练跟进授课。</div>
+			</div>
+			<div class="proab">
+				<div></div>
+				<div>器械使用状态管理</div>
+				<div>根据器械的空闲和使用时间分布，合理更换位置， </div>
+				<div>防止部分器械过度损耗，以及避免使用率不高。</div>
+			</div>
+			<div class="proac">
+				<div></div>
+				<div>教练备课电子化</div>
+				<div>无纸化操作，便于后期数据整理和查看， </div>
+				<div>更能方便管理者查阅教练的课程安排和能力评估。</div>
+			</div>
+		</div>
+		<div class="prob">
+			<div class="proba">
+				<div></div>
+				<div>运动效果评估</div>
+				<div>实时给予学员运动反馈，提高锻炼质量和效率。</div>
+				<div>从而提升健身房的认可度。</div>
+			</div>
+			<div class="probb">
+				<div></div>
+				<div>学员实时数据查看</div>
+				<div>教练可及时发现训练问题，调整课程方案和进度，</div>
+				<div>除肉眼外增加科学的数据依据。</div>
+			</div>
+			<div class="probc">
+				<div></div>
+				<div>多学员同时授课</div>
+				<div>小团课方案支持，不需走动即可快速查看多人</div>
+				<div>实时运动心率和数据，从而提升教学效率。</div>
+			</div>
+		</div>
+	</main>
+</div>
+<div class="ht">智慧提升效率</div>
+<div class="xh">
+	<main>
+		<div class="xht">
+			<div class="xha">
+				<div class="xhaa" onclick="def(0)">
+					<div>我是店长</div>
+					<div>shop manager</div>
+					<div></div>
+				</div>
+				<div class="xhab" onclick="def(1)">
+					<div>我是教练</div>
+					<div>coach</div>
+					<div></div>
+				</div>
+				<div class="xhac" onclick="def(2)">
+					<div>我是会籍</div>
+					<div>membership</div>
+					<div></div>
+				</div>
+				<div class="xhad" onclick="def(3)">
+					<div>我是会员</div>
+					<div>member</div>
+					<div></div>
+				</div>
+			</div>
+			<div class="xhb">
+				<div class="xima"></div>
+				<div class="xtia">教练备课质量评估</div>
+				<div class="ximb"></div>
+				<div class="xtib">运动报告微信引流</div>
+				<div class="ximc"></div>
+				<div class="xtic">私教上课无纸化</div>
+			</div>
+			<div class="xhc">
+				<div class="ximd"></div>
+				<div class="xtid">器械空闲状态查看</div>
+				<div class="xime"></div>
+				<div class="xtie">会员运动效果跟踪</div>
+				<div class="ximf"></div>
+				<div class="xtif">提升会员消课率</div>
+			</div>
+		</div>
+	</main>
+</div>
+<div class="lbbox">
+	<div id="container"></div>
+</div>
+<div class="ser">
+	<div class="sen">
+		<a class="sentit" name="hw">管家式贴身服务</a>
+		<div class="senimg">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="sen">
+		<div class="fnav">
+			<div class="fleft">
+				<div>解决方案</div>
+				<div>SAAS管理系统</div>
+				<div>教练专业授课平板</div>
+				<div>学员运动陪伴app</div>
+				<div>大型操房心率系统</div>
+				<div>一体化智能手环</div>
+				<div>企业微信小程序</div>
+			</div>
+			<div class="fright">
+				<div>联系我们</div>
+				<div>工作时间</div>
+				<div>联系电话</div>
+				<div>商务合作</div>
+				<div>9:00 - 18:00</div>
+				<div>0571-88613265</div>
+				<div>guangzhen.zhu@linkfeeling.cn</div>
+				<div>地址</div>
+				<div>杭州市滨江区东方通信科技园1号楼</div>
+			</div>
+		</div>
+		<div class="ftit">版权所有&nbsp;&nbsp;© 领客菲力&nbsp;&nbsp;领客菲力（杭州）健康技术有限公司&nbsp;&nbsp;&nbsp;浙ICP备15012425号-2</div>
+	</div>
+</footer>
+<script src="js/bannerSlide.js"></script>
+<script>
+var bannerSlide = new BannerSlide({
+    container:'#container', /*容器 必须*/
+    imagesSrc:['img/lba.png','img/lbb.png','img/lbc.png'], /*图片路径 必须*/
+    speed: 9999, /*轮播切换速度 可选*/
+    switchEffect:{ /*切换效果配置 可选*/
+        slide:true, /*轮播*/
+        arrow:true, /*箭头*/
+        radius:false /*圆点*/
+    }
+  });
+</script>
+<script>
+function abc(h){
+	var abc = document.getElementsByClassName("abc")
+	var svg = document.getElementsByClassName("svg")
+	for(i=0;i<4;i++){
+		abc[i].style.color='#fff'
+		svg[i].style.display="none"
+	}
+	abc[h].style.color='#F5B717'
+	svg[h].style.display="inline-block"
+}
+function def(h){
+	var xha = document.getElementsByClassName("xha")
+	console.log(xha)
+	for(i=0;i<4;i++){
+		xha[0].children[i].style.background='#fff'
+		xha[0].children[i].style.border= '.1rem solid rgba(157,161,173,1)'
+		xha[0].children[i].children[0].style.color='#2E3341'
+		xha[0].children[i].children[1].style.color='#ACAFB9'
+		xha[0].children[i].children[2].style.backgroundImage='url(./img/xhg.png)'
+	}
+	xha[0].children[h].style.background='#282A40'
+	xha[0].children[h].style.border=0
+	xha[0].children[h].children[0].style.color='#fff'
+	xha[0].children[h].children[1].style.color='#fff'
+	xha[0].children[h].children[2].style.backgroundImage='url(./img/xhw.png)'
+	var kbc = [
+	[{a:'xia',b:'教练备课质量评估'},{a:'xib',b:'运动报告微信引流'},{a:'xic',b:'私教上课无纸化'},{a:'xid',b:'器械空闲状态查看'},{a:'xie',b:'会员运动效果跟踪'},{a:'xif',b:'提升会员消课率'}],
+	[{a:'xig',b:'智能备课小白变专家'},{a:'xih',b:'运动效果自动评估'},{a:'xii',b:'身体数据在线记录'},{a:'xij',b:'远程查看学员动态'},{a:'xik',b:'专属教练平板电脑'},{a:'xil',b:'快捷功能支持多人授课'}],
+	[{a:'xim',b:'会员运动数据查看'},{a:'xin',b:'运动报告引爆朋友圈'},{a:'xio',b:'潜客在线挖掘'},{a:'xip',b:'创新的营销功能'},{a:'xiq',b:'消课情况实时掌控'},{a:'xir',b:'老客续费及时跟进'}],
+	[{a:'xis',b:'运动管家全程陪护'},{a:'xit',b:'运动效果图表化'},{a:'xiu',b:'零基础运动教程'},{a:'xiv',b:'运动数据收集分析'},{a:'xiw',b:'运动目标互勉激励'},{a:'xix',b:'多场馆数据整合'}]]
+	var xhb = document.getElementsByClassName("xhb")
+	var xhc = document.getElementsByClassName("xhc")
+	xhb[0].children[0].style.backgroundImage='url(./img/'+kbc[h][0].a+'.png)'
+	xhb[0].children[2].style.backgroundImage='url(./img/'+kbc[h][1].a+'.png)'
+	xhb[0].children[4].style.backgroundImage='url(./img/'+kbc[h][2].a+'.png)'
+	xhc[0].children[0].style.backgroundImage='url(./img/'+kbc[h][3].a+'.png)'
+	xhc[0].children[2].style.backgroundImage='url(./img/'+kbc[h][4].a+'.png)'
+	xhc[0].children[4].style.backgroundImage='url(./img/'+kbc[h][5].a+'.png)'
+	xhb[0].children[1].innerHTML=kbc[h][0].b
+	xhb[0].children[3].innerHTML=kbc[h][1].b
+	xhb[0].children[5].innerHTML=kbc[h][2].b
+	xhb[0].children[1].innerHTML=kbc[h][3].b
+	xhb[0].children[3].innerHTML=kbc[h][4].b
+	xhb[0].children[5].innerHTML=kbc[h][5].b
+}
+function clo(){
+	document.getElementById("ok").style.display="none"
+}
+function post(){
+	// console.log($('#inta').val())
+	// console.log(localStorage.getItem("adda"))
+	// console.log($('#intc').val())
+	// console.log($('#intd').val())
+	var inta = document.getElementById("inta")
+	var intb = document.getElementsByClassName("ant-cascader-input")
+	var intc = document.getElementById("intc")
+	var intd = document.getElementById("intd")
+	var inte = document.getElementsByClassName("ant-cascader-picker-label")
+	var ta,tb,tc,td
+	if($('#inta').val()==''){
+   	inta.setAttribute('class', 'inta red');
+   	ta=0
+	}else{
+    inta.setAttribute('class', 'inta');
+    ta=1
+	}
+	intb[0].removeAttribute('readonly');
+	if(inte[0].innerHTML==''){
+   	intb[0].setAttribute('class', 'ant-input ant-cascader-input red');
+   	tb=0
+	}else{
+    intb[0].setAttribute('class', 'ant-input ant-cascader-input');
+    tb=1
+	}
+	intb[0].setAttribute('readonly','readonly');
+	if($('#intc').val()==''){
+   	intc.setAttribute('class', 'intc red');
+   	tc=0
+	}else{
+    intc.setAttribute('class', 'intc');
+    tc=1
+	}
+	if($('#intd').val()==''){
+   	intd.setAttribute('class', 'intd red');
+   	td=0
+	}else{
+    intd.setAttribute('class', 'intd');
+    td=1
+	}
+	if(ta==0 || tb==0 || tc==0 || td==0){
+		console.log(ta+''+tb+''+tc+''+td)
+		return
+	}
+	$.ajax({
+	  url: "http://bg.linkfeeling.cn/api/web/application/info/add",
+	  contentType: "application/json",
+	  dataType: 'json',
+	  method: 'POST',
+	  data: JSON.stringify({ 
+	    "gym_name": "",
+	    "name": $('#inta').val(),
+	    "province": localStorage.getItem("adda"),
+	    "city": localStorage.getItem("addb"),
+	    "area": localStorage.getItem("addc"),
+	    "contact": $('#intc').val(),
+	    "phone": $('#intd').val()
+	  }),
+	  success: function(data) {
+	  	if(data.code == 200){
+	  		document.getElementById("ok").style.display="block"
+	  	}
+	  },
+	  error: function(xhr) {
+	      alert('error:' + JSON.stringify(xhr));
+	  }
+	})
+}
+</script>
+
+<script> 
+if (window.Event)  
+document.captureEvents(Event.MOUSEUP);  
+function nocontextmenu()  
+{ 
+event.cancelBubble = true 
+event.returnValue = false; 
+return false; 
+} 
+function norightclick(e)  
+{ 
+if (window.Event)  
+{ 
+if (e.which == 2 || e.which == 3) 
+return false; 
+} 
+else 
+if (event.button == 2 || event.button == 3) 
+{ 
+event.cancelBubble = true 
+event.returnValue = false; 
+return false; 
+} 
+} 
+document.oncontextmenu = nocontextmenu; // for IE5+ 
+document.onmousedown = norightclick; // for all others 
+</script>
+</body>
+</html>
